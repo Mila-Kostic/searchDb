@@ -21,7 +21,7 @@ let users = [
         name:"marko",
         status: "guest",
         age:35,
-    }
+    },
     {
         name: "marko",
         status: "user"
@@ -52,10 +52,10 @@ function init() {
         getAll:function (usersDb) {
             this.returnedUsers = usersDb;
         },
-    }
-}
+    };
 
-db.userName = prompt("pretrazi korisnika")č
+
+db.userName = prompt("pretrazi korisnika");
 db.search(users);
 
 function existUser() { 
@@ -77,5 +77,8 @@ for (key in user) {
         info += key + ": " + user[key] + " - ";
     }
 }
+console.log(`Korisnik ${index}:`, info.slice(0, -3));
     });
+}
+
 }
