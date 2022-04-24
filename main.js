@@ -82,3 +82,22 @@ console.log(`Korisnik ${index}:`, info.slice(0, -3));
 }
 
 }
+
+function addUser() {
+    let question = confirm(
+        `U bazi ne postoji korisnik ${db.userName}!\nDa li zelite da ga dodate?`
+    );
+    if (question { 
+        lettempInfo = {
+            name: db.userName,
+        };
+        let tempStatus = "";
+        db.config.status.forEach((el, index) => {
+            tempStatus += `${index} za ${el},`;
+        });
+        letstatusIndex = parseInt(
+            prompt(`Za status korisnika odabrati \n{tempS}`)
+        );
+        
+    })
+}
